@@ -1,0 +1,4 @@
+fastai==2.7.19
+cloudpickle==3.1.1
+ipython
+scikit-image
