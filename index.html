@@ -7,3 +7,25 @@
         <p>This app will tell you if it is a cat or a dog.</p>
     </body>
 </html>
+
+<input id="photo" type="file">
+<div id="results"></div>
+
+<script>
+  import { Client } from "https://cdn.jsdelivr.net/npm/@gradio/client/dist/index.min.js";
+
+    photo.addEventListener("input", async () => {
+        const file = photo.files[0];   // the blob (file)
+
+        const client = await Client.connect("varuns17/DogClassifier");
+        const result = await client.predict("/predict", {
+            img: file,                 // send blob directly
+        });
+
+        const label = result.data[0].label;
+
+        // show photo preview
+        const url = URL.createObjectURL(file);
+        results.innerHTML = `<br/><img src="${url}" width="300"> <p>${label}</p>`;
+});
+</script>
