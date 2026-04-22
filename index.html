@@ -18,7 +18,7 @@
         const file = photo.files[0];   // the blob (file)
 
         const client = await Client.connect("varuns17/DogClassifier");
-        const result = await client.predict("/predict", {
+        const result = await client.predict("/classify_image", {
             img: file,                 // send blob directly
         });
 
