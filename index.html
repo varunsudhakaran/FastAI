@@ -23,7 +23,7 @@
         });
 
         const label0 = result.data[0].label;
-        const prob0 = result.data[0].confidence;
+        const prob0 = result.data[0].confidences[0].confidence;
         console.log(result.data);
         // const label1 = result.data[1].label;
         // const prob1 = result.data[1].confidence;
@@ -32,6 +32,6 @@
 
         // show photo preview
         const url = URL.createObjectURL(file);
-        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br>(confidence: ${Number(prob0)?.toFixed(5)})</p><br>`;
+        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br>(confidence: ${prob0?.toFixed(5)})</p><br>`;
 });
 </script>
