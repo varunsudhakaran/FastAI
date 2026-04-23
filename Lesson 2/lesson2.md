@@ -1,4 +1,4 @@
-# Lesson 2 of Fast.AI 2022 Edition
+# Lesson 2 of Fast AI 2026 Edition
 
 Lesson 2 focused on publishing the model (putting things in production).
 
