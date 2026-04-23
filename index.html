@@ -31,6 +31,6 @@
 
         // show photo preview
         const url = URL.createObjectURL(file);
-        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br>(confidence: ${prob0?.toFixed(5)})</p><br>`;
+        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br>(confidence: ${Number(prob0)?.toFixed(5)})</p><br>`;
 });
 </script>
