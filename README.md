@@ -6,4 +6,4 @@ Watching the videos is one thing, but to truly understand, many more hours of pr
 
 So far, I have done the following lessons
 
-* [Lesson 2](https://varunsudhakaran.github.io/FastAI/Lesson%202/index.html)
+* [Lesson 2](https://varunsudhakaran.github.io/FastAI/Lesson%202/petclassifier.html)
