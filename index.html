@@ -24,14 +24,16 @@
 
         const label0 = result.data[0].label;
         const prob0 = result.data[0].confidences[0].confidence;
+        const label1 = result.data[0].confidences[1].label;
+        const prob1 = result.data[0].confidences[1].confidence;
         console.log(result.data);
         // const label1 = result.data[1].label;
-        // const prob1 = result.data[1].confidence;
+        // const prob1 = result.data[1].confidence;ß
         // const label2 = result.data[2].label;
         // const prob2 = result.data[2].confidence; 
 
         // show photo preview
         const url = URL.createObjectURL(file);
-        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br>(confidence: ${prob0?.toFixed(5)})</p><br>`;
+        results.innerHTML = `<br/><img src="${url}" width="300"> <p>This is a ${label0}!<br> This is my confidence: ${prob0?.toFixed(3)})</p><br>Less likely:<br>${label1}: ${prob1.toFixed(7)}<br>`;
 });
 </script>
