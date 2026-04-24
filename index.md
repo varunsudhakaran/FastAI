@@ -6,4 +6,4 @@ Watching the videos is one thing, but to truly understand, many more hours of pr
 
 So far, I have done the following lessons
 
-* [Lesson 2](Lesson%202/lesson2.md)
+* [Lesson 2](Lesson%202/lesson2.html)
